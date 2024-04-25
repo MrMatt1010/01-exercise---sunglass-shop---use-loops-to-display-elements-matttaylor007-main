@@ -1,0 +1,16 @@
+{
+  "name": "01-exercise-sunglass-shop",
+  "author": "Developers Institute",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "serve -d Submission",
+    "test": "npm run test:acceptance",
+    "test:acceptance": "start-server-and-test start http://localhost:5000 cy:run",
+    "cy:run": "cypress run --spec 'cypress/integration/exercise.spec.js'"
+  },
+  "devDependencies": {
+    "cypress": "^7.2.0",
+    "serve": "^11.3.2",
+    "start-server-and-test": "^1.12.1"
+  }
+}
